@@ -22,8 +22,8 @@ username = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.NAME, "
 password = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.NAME, "password")))
 username.clear()
 password.clear()
-username.send_keys("mimi.py")
-password.send_keys("10021190/adityA")
+username.send_keys("username_variable")
+password.send_keys("password_variable")
 login = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//button[@type='submit']"))).click()
 
 
@@ -36,7 +36,7 @@ time.sleep(2)
 # search = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//div[@class='x9f619 xxk0z11 xvy4d1p x11xpdln xii2z7h x19c4wfv']/*[name()='svg'][@aria-label='Search']"))).click()
 searchbox = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "//input[@placeholder='Search']")))
 
-search_terms = ['lotpot.clinic', 'dankmemeabhiyan', 'simpsena', 'shitposting_guy', 'cream_roll_sixty9', 'chemicalburnol', 'bmsx2gang', 'baekooof', 'pune.shitposting.sangh', 'sonu_xd2', 'normiebihari', 'thedarkhumourguy', 'dankimeme.xd', 'meme.sangathan', 'unfunnisam', 'dio_got_memes.v2.0', 'wtfdoofus', '_humourastic_', 'nathumagarpyaarse', 'azaadmemesena', 'dankvita', 'dank._vishu', 'lotpot_xd', 'luxx.ded', 'anaspostingg', 'wtfsamir', 'dio_got_memes', 'cringep0ster', 'cringepostrandy', 'dankasur', 'swadeshi_weeb','yaarfhirvhi', 'bepritam', 'wtfpratyush', 'dank.dairies', 'noncontextualmemes', 'xerosymbiote2', 'khurpech', 'darkk_blinderr', 'indianshitposts', 'mishrasays_', 'memespromax_', 'grandmas.butt', 'cringechub', 'raju_mistrii', 'bhang_bhosda_posting', 'emoboisofindia', 'funnies.exe47', 'stfu_shubhamm', 'machax_sadura_69', 'baka.narutooo', 'itz.arpit45.xd', 'dankrajasthan', 'masaalaa.dosa', 'comrade_memers', 'ofhensive', 'trullytasteless', 'indiansoninternetx2', 'theantinormieguy.x2', 'ctfu.chitresh', 'wtf.dotexe', 'neelapapita', 'shivam._.vella', 'dmm.back', 'indiansoninternettt', 'realmemedeal', 'ayurvedicburnol2', 'paradox.clown', 'chemicalmimiposting', 'sonusood_meme_service', 'iambuu', 'memesmatterheree', 'babloo.meme.senaa', 'azaanprime', 'simp.xdd', 'theantinormieguy', 'hmfet', 'chachagotnocheeeel', 'krynje', 'pyaazwallah', 'indian.indian.indian.indian', 'brahmemesena', 'meme_nhi_maymay', 'thememesnations', 'indianmemepolice', 'dunk.ashu', 'arnabhatake', 'lewd.chief_', 'tsunade.mp4', 'iknowthatfeelbroo', 'ashishbaazi', 'aparishit', 'dank_jethiya', 'ashishbaazi', 'som.akuma', 'khul_ja_simp_simp', 'aarcaid', 'nathuramgods.exe', 'dhruser', 'meme_beast_47', 'ayurvedicburnol', 'uttar_pradesh_meme_pulis']
+search_terms = []
 searchbox.clear()
 search_terms = random.choice(search_terms)
 searchbox.send_keys(search_terms)
